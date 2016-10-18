@@ -1,5 +1,5 @@
 # Tier-1-Coding-in-JPEG2000
-The demo of encoder and decoder in Matlab for EBCOT (Bit plane coder) and MQ coder. The MQ coder Matlab code is mainly from Mr. Xavi Alameda (http://xavirema.eu/mq-coder-in-matlab/)
+The demo of encoder and decoder in Matlab for EBCOT (Bit plane coder programmed by myself) and MQ coder. The MQ coder Matlab code is from Dr. Xavier Alameda-Pineda (http://xavirema.eu/mq-coder-in-matlab/)
 
 The demo_for_all.m is to show how to use it.
 
