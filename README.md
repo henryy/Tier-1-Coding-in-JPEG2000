@@ -10,21 +10,36 @@ The process is : input >> bit plane encode >> mq encode >> mq decode >> bit paln
 Input and Output is as follows:
 
 %Call bit plane coder
+
 %Input:Input matrix (must be a matrix that width can be divided by 4).
+
 %Output: Di.txt and CXi.txt
+
 [width,length,P, howManyBlocks] = EncodeBitPlaneCoder(Input,Band_Mark);
 
+
 %Call MQ coder
+
 %Input: Di.txt and CXi.txt
+
 %Output: mq_encode_i.txt
+
 encode_pointer  = mq_encode_main( howManyBlocks );
 
+
 %Call MQ decoder
+
 %Input: mq_encode_i.txt and CXi.txt
+
 %Output:D_afterMQ_i.txt
+
 mq_decoder_main( howManyBlocks,encode_pointer);
 
+
 %Call bit plane decoder
+
 %Input:D_afterMQ_i.txt
+
 %Output: Output matrix.
+
 Output = DecodeBitPlaneCoder(width,length, P);
